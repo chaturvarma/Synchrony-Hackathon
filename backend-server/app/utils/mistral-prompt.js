@@ -7,6 +7,8 @@ Instructions:
 - Only return the commands inside a code block like \`\`\`cmd.
 - If multiple CMD commands are needed, return them all in order.
 - All commands must be directly executable in Windows CMD.
+- If the input lacks sufficient information (e.g., missing filenames, folder paths, or specific parameters), do NOT return any CMD commands. Instead, reply with exactly what specific information is required.
+- If the input includes a previously executed command and its resulting error, analyze the error and return the corrected CMD command(s). If the error is due to missing or unclear input, reply with exactly what specific information is required.
 `;
 
 /*
